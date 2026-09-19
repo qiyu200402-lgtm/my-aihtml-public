@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta name="description" content="2026年美国旅行双版本行程：每日时间、交通、景点指南及官方订票入口。">
+  <title>横跨美国的三十二天 · 双版本旅行计划</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="app.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到行程内容</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M4 27 15 8l6 10 5-7 6 16H4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="11" r="2" fill="currentColor"/></svg></span><span>旅程手记 <small>TRAVEL FIELD NOTES</small></span></a>
+      <div class="header-actions"><span class="header-range">2026.10.04 — 11.04</span><button type="button" id="printButton" class="text-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M6 17H4V9h16v8h-2M7 14h10v7H7z"/></svg>打印当前计划</button></div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-rule"></span> 一次旅行 · 两种走法</p><h1 id="hero-title">横跨美国的<br><em>三十二天</em></h1><p class="hero-lede">从新泽西的山林到纽约街头，再穿越西海岸与峡谷。把每一天的时间、换乘、景点精华和订票入口放在一起，出发前更容易看清整段路。</p><div class="hero-meta"><span><strong>32</strong> 天行程</span><span><strong>2</strong> 种方案</span><span><strong>10</strong> 月 4 日出发</span></div></div>
+        <div class="hero-art" aria-hidden="true"><div class="map-grid"></div><svg class="route-art" viewBox="0 0 540 380" preserveAspectRatio="xMidYMid meet"><path class="route-line" d="M60 116 C111 87 128 157 171 133 S238 90 272 166 S365 222 406 165 S477 132 505 94"/><path class="route-line-secondary" d="M171 133 C208 236 251 279 313 254 S405 270 465 295"/><circle cx="60" cy="116" r="8"/><circle cx="171" cy="133" r="8"/><circle cx="272" cy="166" r="8"/><circle cx="406" cy="165" r="8"/><circle cx="505" cy="94" r="8"/><circle cx="313" cy="254" r="8"/><circle cx="465" cy="295" r="8"/></svg><span class="map-label l1">纽约</span><span class="map-label l2">华盛顿</span><span class="map-label l3">洛杉矶</span><span class="map-label l4">旧金山</span><span class="map-label l5">峡谷地带</span><div class="art-stamp">USA<br><span>2026</span></div></div>
+      </section>
+
+      <section class="workspace" id="planner" aria-label="旅行计划">
+        <div class="workspace-top"><div><p class="section-kicker">ITINERARY / 行程总览</p><h2>选择一天，展开细节</h2></div><p class="workspace-intro">时间为当地参考时段。航班、列车和定时票一经预订，请按实际班次调整前后活动。</p></div>
+        <div class="toolbar"><div class="plan-switch" role="group" aria-label="选择计划版本"><button type="button" class="plan-button active" data-plan="revised" aria-pressed="true">节奏调整版 <span>推荐</span></button><button type="button" class="plan-button" data-plan="original" aria-pressed="false">原景点顺序版</button></div><div class="toolbar-tools"><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">搜索日期、城市或景点</span><input type="search" id="searchInput" placeholder="搜索城市或景点"></label><button type="button" id="warningFilter" class="filter-button" aria-pressed="false">只看需调整的天数</button></div></div>
+        <div class="planner-layout"><nav class="day-nav" aria-label="选择日期"><div class="day-nav-head"><span>日期导航</span><span id="dayCount"></span></div><div id="dayList" class="day-list"></div></nav><section class="day-detail" id="dayDetail" aria-live="polite"></section></div>
+      </section>
+
+      <section class="notes" aria-labelledby="notes-title"><div><p class="section-kicker">BEFORE YOU GO / 出行前</p><h2 id="notes-title">先锁定关键预约</h2><p>自由女神渡轮、独立纪念馆、国会大厦、国会图书馆、华盛顿纪念碑、航空航天博物馆、狼园和羚羊峡谷，都需要按官方渠道确认时段。页面的“订票”链接会直接打开对应运营方或机构的网站。</p></div><div class="note-list"><p><span>01</span> 跨城航班与火车先定，再锁定景点时段。</p><p><span>02</span> 原版的 10 月 24 日、26 日存在无法完成的衔接。</p><p><span>03</span> 黄石及其他公园的道路和接驳车，出发前再核实。</p></div></section>
+    </main>
+    <footer class="site-footer"><span>为这趟旅程整理 · 2026</span><span>时间为计划建议，门票与运行状态以官方页面为准</span></footer>
+  </div>
+</body>
+</html>
